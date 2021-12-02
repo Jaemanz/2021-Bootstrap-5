@@ -20,6 +20,13 @@ Input types: Text,
 
 Bootstrap Form Classes:
 form-label, form-control
+
+Drop Downs:
+<select> </select> <- Surronds Options
+<option> </option> <- Each Option
+Classes: form-select (required)
+         form-select-lg or
+         form-select-sm (optional)
 -->
 <div class="container">
     <div class="row">
@@ -28,11 +35,13 @@ form-label, form-control
                 <div class="row">
                     <div class="col-sm-6">
                         <label for="fspeed" class="form-label">First Favorite Speed Lyric</label>
-                        <input type="text" id="fspeed" name="fspeed" class="form-control" placeholder="Type Your Favorite Speed Lyric">
+                        <input type="text" id="fspeed" name="fspeed" class="form-control"
+                               placeholder="Type Your Favorite Speed Lyric">
                     </div>
                     <div class="col-sm-6">
                         <label for="2fspeed" class="form-label">Second Favorite Speed Lyric</label>
-                        <input type="text" id="2fspeed" name="2fspeed" class="form-control" placeholder="Type Your Second Favorite Speed Lyric">
+                        <input type="text" id="2fspeed" name="2fspeed" class="form-control"
+                               placeholder="Type Your Second Favorite Speed Lyric">
                     </div>
                 </div>
                 <div class="row">
@@ -44,21 +53,99 @@ form-label, form-control
                 <div class="row">
                     <div class="col">
                         <label for="2add" class="form-label">Address 2</label>
-                        <input type="text" id="2add" name="2add" class="form-control" placeholder="Drop the 2nd Addy Girl">
+                        <input type="text" id="2add" name="2add" class="form-control"
+                               placeholder="Drop the 2nd Addy Girl">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-5">
                         <label for="city" class="form-label">City</label>
                         <input type="text" id="city" name="city" class="form-control" placeholder="Enter City">
+
                     </div>
                     <div class="col-sm-2">
                         <label for="state" class="form-label">State</label>
-                        <input type="text" id="state" name="state" class="form-control" placeholder="ST">
+                        <!--<input type="text" id="state" name="state" class="form-control" placeholder="ST">-->
+                        <select class="form-select" name="state" id="state">
+                            <option value="AL">Alabama (AL)</option>
+                            <option value="AK">Alaska (AK)</option>
+                            <option value="AZ">Arizona (AZ)</option>
+                            <option value="AR">Arkansas (AR)</option>
+                            <option value="CA">California (CA)</option>
+                            <option value="CO">Colorado (CO)</option>
+                            <option value="CT">Connecticut (CT)</option>
+                            <option value="DE">Delaware (DE)</option>
+                            <option value="DC">District Of Columbia (DC)</option>
+                            <option value="FL">Florida (FL)</option>
+                            <option value="GA">Georgia (GA)</option>
+                            <option value="HI">Hawaii (HI)</option>
+                            <option value="ID">Idaho (ID)</option>
+                            <option value="IL">Illinois (IL)</option>
+                            <option value="IN">Indiana (IN)</option>
+                            <option value="IA">Iowa (IA)</option>
+                            <option value="KS">Kansas (KS)</option>
+                            <option value="KY">Kentucky (KY)</option>
+                            <option value="LA">Louisiana (LA)</option>
+                            <option value="ME">Maine (ME)</option>
+                            <option value="MD">Maryland (MD)</option>
+                            <option value="MA">Massachusetts (MA)</option>
+                            <option value="MI">Michigan (MI)</option>
+                            <option value="MN">Minnesota (MN)</option>
+                            <option value="MS">Mississippi (MS)</option>
+                            <option value="MO">Missouri (MO)</option>
+                            <option value="MT">Montana (MT)</option>
+                            <option value="NE">Nebraska (NE)</option>
+                            <option value="NV">Nevada (NV)</option>
+                            <option value="NH">New Hampshire (NH)</option>
+                            <option value="NJ">New Jersey (NJ)</option>
+                            <option value="NM">New Mexico (NM)</option>
+                            <option value="NY">New York (NY)</option>
+                            <option value="NC">North Carolina (NC)</option>
+                            <option value="ND">North Dakota (ND)</option>
+                            <option value="OH">Ohio (OH)</option>
+                            <option value="OK">Oklahoma (OK)</option>
+                            <option value="OR">Oregon (OR)</option>
+                            <option value="PA">Pennsylvania (PA)</option>
+                            <option value="RI">Rhode Island (RI)</option>
+                            <option value="SC">South Carolina (SC)</option>
+                            <option value="SD">South Dakota (SD)</option>
+                            <option value="TN">Tennessee (TN)</option>
+                            <option value="TX">Texas (TX)</option>
+                            <option value="UT">Utah (UT)</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
                     </div>
                     <div class="col-sm-5">
                         <label for="zip" class="form-label">Zip Code</label>
                         <input type="text" id="zip" name="zip" class="form-control" placeholder="Enter Zip Code">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="reason" class="form-label">Reason For Contact:</label>
+                        <select multiple name="reason" class="form-select">
+                            <option value="billing">Billing Problem</option>
+                            <option value="support">Technical Support</option>
+                            <option value="shipping">Shipping Issue</option>
+                            <option value="return">Return Product</option>
+                            <option value="cranky">Lodge Complaint</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="comment" class="form-label">Comments:</label>
+                        <textarea placeholder="Enter Your Comments here" class="form-control" rows="6" name="comment" id="comment"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary">TOP OF THE MORNIN TOP OF THE MORNIN TOP OF THE MORNIN</button>
                     </div>
                 </div>
             </form>
